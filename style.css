@@ -1,0 +1,480 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f4f6fb;
+    color: #1f2937;
+}
+
+
+.container {
+    width: 92%;
+    max-width: 1150px;
+    margin: 40px auto;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+.header {
+    margin-bottom: 25px;
+}
+
+
+.header h1 {
+    font-size: 32px;
+    color: #111827;
+    margin-bottom: 6px;
+}
+
+
+.header p {
+    color: #6b7280;
+    font-size: 15px;
+}
+
+
+/* =========================
+   FORM CARD
+========================= */
+
+.form-card {
+    background: white;
+
+    padding: 28px;
+
+    border-radius: 14px;
+
+    box-shadow:
+        0 8px 25px rgba(0, 0, 0, 0.07);
+
+    margin-bottom: 25px;
+}
+
+
+.form-card h2 {
+    margin-bottom: 22px;
+
+    font-size: 21px;
+}
+
+
+/* =========================
+   FORM GRID
+========================= */
+
+.form-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 18px;
+}
+
+
+.input-group {
+
+    display: flex;
+
+    flex-direction: column;
+}
+
+
+.input-group label {
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+    margin-bottom: 7px;
+
+    color: #374151;
+}
+
+
+.input-group input,
+.input-group select {
+
+    width: 100%;
+
+    padding: 12px 13px;
+
+    border: 1px solid #d1d5db;
+
+    border-radius: 8px;
+
+    outline: none;
+
+    font-size: 14px;
+
+    background: white;
+}
+
+
+.input-group input:focus,
+.input-group select:focus {
+
+    border-color: #4f46e5;
+
+    box-shadow:
+        0 0 0 3px rgba(79, 70, 229, 0.1);
+}
+
+
+/* =========================
+   BUTTON AREA
+========================= */
+
+.button-area {
+
+    display: flex;
+
+    gap: 12px;
+
+    margin-top: 25px;
+
+    flex-wrap: wrap;
+}
+
+
+.btn {
+
+    border: none;
+
+    padding: 12px 22px;
+
+    border-radius: 8px;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+
+    min-width: 120px;
+}
+
+
+.btn:hover {
+
+    transform: translateY(-1px);
+
+    box-shadow:
+        0 5px 12px rgba(0, 0, 0, 0.12);
+}
+
+
+/* GET LIST */
+
+.btn.get-list {
+
+    background: #7c3aed;
+
+    color: white;
+}
+
+
+.btn.get-list:hover {
+
+    background: #6d28d9;
+}
+
+
+/* SAVE */
+
+.btn.save {
+
+    background: #16a34a;
+
+    color: white;
+}
+
+
+.btn.save:hover {
+
+    background: #15803d;
+}
+
+
+/* UPDATE */
+
+.btn.update {
+
+    background: #2563eb;
+
+    color: white;
+}
+
+
+.btn.update:hover {
+
+    background: #1d4ed8;
+}
+
+
+/* =========================
+   TABLE CARD
+========================= */
+
+.table-card {
+
+    background: white;
+
+    padding: 25px;
+
+    border-radius: 14px;
+
+    box-shadow:
+        0 8px 25px rgba(0, 0, 0, 0.07);
+}
+
+
+/* =========================
+   TABLE TOP
+========================= */
+
+.table-top {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin-bottom: 20px;
+}
+
+
+.table-top h2 {
+
+    font-size: 21px;
+}
+
+
+#searchInput {
+
+    width: 250px;
+
+    padding: 11px 14px;
+
+    border: 1px solid #d1d5db;
+
+    border-radius: 8px;
+
+    outline: none;
+
+    font-size: 14px;
+}
+
+
+#searchInput:focus {
+
+    border-color: #4f46e5;
+}
+
+
+/* =========================
+   TABLE
+========================= */
+
+.table-wrapper {
+
+    overflow-x: auto;
+}
+
+
+table {
+
+    width: 100%;
+
+    border-collapse: collapse;
+}
+
+
+thead {
+
+    background: #f8fafc;
+}
+
+
+th {
+
+    padding: 15px;
+
+    text-align: left;
+
+    font-size: 13px;
+
+    color: #64748b;
+
+    border-bottom: 2px solid #e5e7eb;
+}
+
+
+td {
+
+    padding: 14px 15px;
+
+    font-size: 14px;
+
+    border-bottom: 1px solid #edf0f3;
+}
+
+
+tbody tr:hover {
+
+    background: #fafafa;
+}
+
+
+/* =========================
+   ACTION BUTTONS
+========================= */
+
+.action-buttons {
+
+    display: flex;
+
+    gap: 8px;
+}
+
+
+.edit-btn,
+.delete-btn {
+
+    border: none;
+
+    padding: 8px 14px;
+
+    border-radius: 6px;
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+
+/* EDIT */
+
+.edit-btn {
+
+    background: #f59e0b;
+
+    color: white;
+}
+
+
+.edit-btn:hover {
+
+    background: #d97706;
+}
+
+
+/* DELETE */
+
+.delete-btn {
+
+    background: #dc2626;
+
+    color: white;
+}
+
+
+.delete-btn:hover {
+
+    background: #b91c1c;
+}
+
+
+/* EMPTY */
+
+.empty {
+
+    text-align: center;
+
+    padding: 35px;
+
+    color: #9ca3af;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 900px) {
+
+    .form-grid {
+
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .container {
+
+        width: 94%;
+
+        margin: 25px auto;
+    }
+
+
+    .form-grid {
+
+        grid-template-columns: 1fr;
+    }
+
+
+    .button-area {
+
+        flex-direction: column;
+    }
+
+
+    .btn {
+
+        width: 100%;
+    }
+
+
+    .table-top {
+
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 15px;
+    }
+
+
+    #searchInput {
+
+        width: 100%;
+    }
+
+
+    .action-buttons {
+
+        flex-direction: column;
+    }
+
+}

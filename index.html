@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Student Management</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- HEADER -->
+        <div class="header">
+            <h1>Student Management</h1>
+            <p>Manage student records easily</p>
+        </div>
+
+
+        <!-- FORM CARD -->
+        <div class="form-card">
+
+            <h2>Student Details</h2>
+
+            <div class="form-grid">
+
+                <!-- ID -->
+                <div class="input-group">
+
+                    <label>Student ID</label>
+
+                    <input
+                        type="number"
+                        id="studentId"
+                        placeholder="Enter student ID"
+                    >
+
+                </div>
+
+
+                <!-- NAME -->
+                <div class="input-group">
+
+                    <label>Name</label>
+
+                    <input
+                        type="text"
+                        id="name"
+                        placeholder="Enter student name"
+                    >
+
+                </div>
+
+
+                <!-- AGE -->
+                <div class="input-group">
+
+                    <label>Age</label>
+
+                    <input
+                        type="number"
+                        id="age"
+                        placeholder="Enter age"
+                    >
+
+                </div>
+
+
+                <!-- GENDER -->
+                <div class="input-group">
+
+                    <label>Gender</label>
+
+                    <select id="gender">
+
+                        <option value="">
+                            Select Gender
+                        </option>
+
+                        <option value="Male">
+                            Male
+                        </option>
+
+                        <option value="Female">
+                            Female
+                        </option>
+
+                        <option value="Other">
+                            Other
+                        </option>
+
+                    </select>
+
+                </div>
+
+            </div>
+
+
+            <!-- BUTTONS -->
+            <div class="button-area">
+
+                <!-- GET LIST -->
+                <button
+                    class="btn get-list"
+                    onclick="getStudentList()"
+                >
+                    ☷ Get List
+                </button>
+
+
+                <!-- SAVE -->
+                <button
+                    class="btn save"
+                    onclick="saveStudent()"
+                    id="saveButton"
+                >
+                    ✓ Save
+                </button>
+
+
+                <!-- UPDATE -->
+                <!-- Initially hidden -->
+                <button
+                    class="btn update"
+                    onclick="updateStudent()"
+                    id="updateButton"
+                    style="display: none;"
+                >
+                    ↻ Update
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- TABLE CARD -->
+        <div class="table-card">
+
+            <div class="table-top">
+
+                <h2>Student List</h2>
+
+                <input
+                    type="text"
+                    id="searchInput"
+                    placeholder="Search student..."
+                    onkeyup="searchStudents()"
+                >
+
+            </div>
+
+
+            <div class="table-wrapper">
+
+                <table>
+
+                    <thead>
+
+                        <tr>
+
+                            <th>ID</th>
+
+                            <th>Name</th>
+
+                            <th>Age</th>
+
+                            <th>Gender</th>
+
+                            <th>Action</th>
+
+                        </tr>
+
+                    </thead>
+
+
+                    <tbody id="studentTableBody">
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
